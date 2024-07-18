@@ -173,7 +173,6 @@ main {
 }
 .habbyt {
   width: 92%;
-  border: 2px solid red;
   margin: 30px auto;
 }
 .habbyt-heding {
@@ -218,14 +217,60 @@ main {
   text-align: center;
   border-radius: 50%;
   padding: 5px;
-  
 }
 .card-1 .img {
   border-radius: 50%;
   height: 160px;
   width: 150px;
+}
+/* runs section */
+.run-section {
+  width: 92%;
+  margin: 10px auto;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  background: rgb(34, 34, 34);
+  padding: 20px;
+}
+.run-text {
+  width: 400px;
+  height: 300px;
+}
+.run-img {
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
+}
+.run-img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+  object-position: top right;
+}
 
-  
+.run-text h1 {
+  color: var(--heding-color);
+  font-size: 45px;
+  font-weight: 900;
+  padding: 5px 20px 5px 0px;
+}
+.run-text p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 15px;
+  padding: 10px 5px 23px 0px;
+}
+.run-text button {
+  background-color: var(--btn-color);
+  padding: 8px 9px;
+  border: none;
+  width: 130px;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  border-radius: 20px;
 }
 /* small divai phone */
 @media screen and (max-width: 576px) {
@@ -244,6 +289,11 @@ main {
   .bennar-1 {
     width: 100%;
   }
+  .bennar-1 button {
+    font-size: 14px;
+    padding: 4px 6px;
+    width: 120px;
+  }
   .bennar-2 {
     width: 100%;
   }
@@ -256,10 +306,26 @@ main {
     top: 270px;
     left: 10px;
   }
-  .habbyt-card{
+  .habbyt-card {
     flex-wrap: wrap;
   }
-  .card-1{
+  .card-1 {
     width: 300px;
+  }
+  /* runsection */
+  .run-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .run-text {
+    width: 90%;
+    height: auto;
+  }
+  .run-text button {
+    width: 90%;
+    padding: 10px;
+  }
+  .run-img {
+    width: 90%;
   }
 }
