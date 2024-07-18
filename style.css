@@ -69,70 +69,164 @@ nav ul li a {
 .bennar {
   width: 92%;
   height: 450px;
-  border: 2px solid red;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 40px;
+  gap: 50px;
 }
 .bennar-1 {
-  border: 2px solid green;
   width: 60%;
 }
 .bennar-1 h1 {
-    color: var(--heding-color);
-    font-size: 59px;
-    font-weight: 900;
-    padding: 20px 0px;
-    letter-spacing: -1px;
-    word-spacing: -1px;
-    line-height: 64px;
-
+  color: var(--heding-color);
+  font-size: 59px;
+  font-weight: 900;
+  padding: 20px 0px;
+  letter-spacing: -1px;
+  word-spacing: -1px;
+  line-height: 64px;
 }
 .bennar-1 p {
-    color: var(--p-text);
-    font-size: 15px;
-    padding: 3px 5px 18px 0px;
+  color: var(--p-text);
+  font-size: 15px;
+  padding: 3px 5px 18px 0px;
 }
-.bennar-1 button{
-    color: var(--heding-color);
-    font-size: 17px;
-    background-color: transparent;
-    border: none;
-    font-weight: 700;
-    letter-spacing: -.5px;
-    word-spacing: -.5px;
-    width:180px;
-    padding: 7px 10px;
-
+.bennar-1 button {
+  color: var(--heding-color);
+  font-size: 17px;
+  background-color: transparent;
+  border: none;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  word-spacing: -0.5px;
+  width: 180px;
+  padding: 7px 10px;
 }
-.bennar-1 .btn-1{
-    margin-right: 20px;
+.bennar-1 .btn-1 {
+  margin-right: 20px;
 }
-.btn-div{
-    text-align: center;
+.btn-div {
+  text-align: center;
 }
-.bennar-1 .btn-1{
-    background-color: var(--btn-color);
-    border-radius: 37px;
+.bennar-1 .btn-1 {
+  background-color: var(--btn-color);
+  border-radius: 37px;
 }
-.bennar-1 .btn-2{
-border: 1px solid rgb(255, 255, 255);
-border-radius: 37px;
-
+.bennar-1 .btn-2 {
+  margin-right: 20px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 37px;
 }
 .bennar-2 {
-    border: 2px solid green;
   width: 40%;
   height: 100%;
-  
+  position: relative;
 }
 .bennar-2 img {
   /* height: 300px; */
   height: 100%;
 }
+.blur-box1 {
+  color: var(--heding-color);
+  position: absolute;
+  top: 120px;
+  right: -10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 10px;
+  backdrop-filter: blur(26px);
+  background: rgba(255, 255, 255, 0.1);
+}
+.blur-box1 p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.65);
+}
+.blur-box2 {
+  backdrop-filter: blur(26px);
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--heding-color);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  position: absolute;
+  border-radius: 10px;
+  top: 324px;
+  left: -70px;
+  gap: 5px;
+}
+.red-box {
+  border-radius: 13px;
+  background: rgb(230, 83, 60);
+  width: 26px;
+  height: 26px;
+}
 
+.text-box p {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 13px;
+}
+/* main section */
+main {
+  border: 1px solid red;
+  width: 100%;
+}
+.habbyt {
+  width: 92%;
+  border: 2px solid red;
+  margin: 30px auto;
+}
+.habbyt-heding {
+  width: 80%;
+  margin: 5px auto;
+  text-align: center;
+}
+.habbyt-heding h1 {
+  color: var(--heding-color);
+  padding: 7px;
+  font-size: 40px;
+}
+.habbyt-heding p {
+  color: var(--p-text);
+}
+.habbyt-card {
+  margin: 15px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+  padding: 3px;
+}
+.card-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 280px;
+}
+.card-1 h4 {
+  color: var(--heding-color);
+  padding: 7px;
+}
+.card-1 p {
+  color: var(--p-text);
+  font-size: 14px;
+}
+.card-1 .img img {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border-radius: 50%;
+  padding: 5px;
+  
+}
+.card-1 .img {
+  border-radius: 50%;
+  height: 160px;
+  width: 150px;
+
+  
+}
 /* small divai phone */
 @media screen and (max-width: 576px) {
   .icon {
@@ -141,5 +235,31 @@ border-radius: 37px;
   }
   nav ul {
     display: none;
+  }
+  /* bennar */
+  .bennar {
+    flex-direction: column;
+    height: auto;
+  }
+  .bennar-1 {
+    width: 100%;
+  }
+  .bennar-2 {
+    width: 100%;
+  }
+  .blur-box1 {
+    font-size: 10px;
+    right: -0px;
+    top: 70px;
+  }
+  .blur-box2 {
+    top: 270px;
+    left: 10px;
+  }
+  .habbyt-card{
+    flex-wrap: wrap;
+  }
+  .card-1{
+    width: 300px;
   }
 }
