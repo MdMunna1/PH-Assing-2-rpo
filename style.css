@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+html,
+body {
+  background: rgb(0, 0, 0);
+  font-family: "Inter", sans-serif;
+}
+/* shearing css  */
+.header-color {
+  background: linear-gradient(
+    180deg,
+    rgb(17, 17, 17),
+    rgba(119, 119, 119, 0) 100%
+  );
+}
+:root {
+  --btn-color: rgb(230, 83, 60);
+  --heding-color: rgb(255, 255, 255);
+  --p-text: rgba(255, 255, 255, 0.5);
+}
+header {
+  width: 100%;
+  background-image: linear-gradient(rgb(17, 17, 17), rgba(119, 119, 119, 0));
+}
+nav {
+  padding: 23px 0px;
+  width: 92%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav h1 {
+  color: var(--btn-color);
+  font-size: 39px;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 10px;
+  border: 0.5px solid rgba(128, 128, 128, 0.336);
+}
+nav ul li:first-child {
+  background-color: var(--btn-color);
+  border-radius: 9px;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  padding: 2px 5px;
+}
+.icon {
+  color: white;
+  display: none;
+}
+/* bennar section */
+.bennar {
+  width: 92%;
+  height: 450px;
+  border: 2px solid red;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+.bennar-1 {
+  border: 2px solid green;
+  width: 60%;
+}
+.bennar-1 h1 {
+    color: var(--heding-color);
+    font-size: 59px;
+    font-weight: 900;
+    padding: 20px 0px;
+    letter-spacing: -1px;
+    word-spacing: -1px;
+    line-height: 64px;
+
+}
+.bennar-1 p {
+    color: var(--p-text);
+    font-size: 15px;
+    padding: 3px 5px 18px 0px;
+}
+.bennar-1 button{
+    color: var(--heding-color);
+    font-size: 17px;
+    background-color: transparent;
+    border: none;
+    font-weight: 700;
+    letter-spacing: -.5px;
+    word-spacing: -.5px;
+    width:180px;
+    padding: 7px 10px;
+
+}
+.bennar-1 .btn-1{
+    margin-right: 20px;
+}
+.btn-div{
+    text-align: center;
+}
+.bennar-1 .btn-1{
+    background-color: var(--btn-color);
+    border-radius: 37px;
+}
+.bennar-1 .btn-2{
+border: 1px solid rgb(255, 255, 255);
+border-radius: 37px;
+
+}
+.bennar-2 {
+    border: 2px solid green;
+  width: 40%;
+  height: 100%;
+  
+}
+.bennar-2 img {
+  /* height: 300px; */
+  height: 100%;
+}
+
+/* small divai phone */
+@media screen and (max-width: 576px) {
+  .icon {
+    display: block;
+    font-size: 26px;
+  }
+  nav ul {
+    display: none;
+  }
+}
