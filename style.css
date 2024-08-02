@@ -24,6 +24,11 @@ body {
   --heding-color: rgb(255, 255, 255);
   --p-text: rgba(255, 255, 255, 0.5);
 }
+/* bacgraund-img */
+.bg-fitt {
+  background-position: center;
+  background-size: cover;
+}
 header {
   width: 100%;
   background-image: linear-gradient(rgb(17, 17, 17), rgba(119, 119, 119, 0));
@@ -39,6 +44,8 @@ nav {
 nav h1 {
   color: var(--btn-color);
   font-size: 39px;
+  font-weight: 900;
+  font-style: italic;
 }
 nav ul {
   display: flex;
@@ -73,10 +80,10 @@ nav ul li a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 50px;
+  gap: 60px;
 }
 .bennar-1 {
-  width: 60%;
+  width: 55%;
 }
 .bennar-1 h1 {
   color: var(--heding-color);
@@ -90,7 +97,7 @@ nav ul li a {
 .bennar-1 p {
   color: var(--p-text);
   font-size: 15px;
-  padding: 3px 5px 18px 0px;
+  padding: 3px 20px 18px 0px;
 }
 .bennar-1 button {
   color: var(--heding-color);
@@ -107,19 +114,21 @@ nav ul li a {
   margin-right: 20px;
 }
 .btn-div {
-  text-align: center;
+  text-align: left;
 }
 .bennar-1 .btn-1 {
   background-color: var(--btn-color);
   border-radius: 37px;
+  padding: 10px;
 }
 .bennar-1 .btn-2 {
   margin-right: 20px;
   border: 1px solid rgb(255, 255, 255);
   border-radius: 37px;
+  padding: 10px;
 }
 .bennar-2 {
-  width: 40%;
+  width: 45%;
   height: 100%;
   position: relative;
 }
@@ -131,7 +140,7 @@ nav ul li a {
   color: var(--heding-color);
   position: absolute;
   top: 120px;
-  right: -10px;
+  right: 40px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   padding: 10px;
@@ -234,6 +243,7 @@ main {
   border-radius: 15px;
   background: rgb(34, 34, 34);
   padding: 20px;
+  height: auto;
 }
 .run-text {
   width: 400px;
@@ -272,6 +282,301 @@ main {
   font-weight: 600;
   border-radius: 20px;
 }
+/* footer section */
+footer {
+  background: rgba(255, 255, 255, 0.1);
+  width: 100%;
+}
+.main-footer {
+  width: 92%;
+  margin: 10px auto;
+  border-bottom: 1px solid rgba(97, 96, 96, 0.37);
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 25px 10px 40px 10px;
+}
+
+.main-footer h3 {
+  color: var(--heding-color);
+  font-size: 18px;
+  padding: 5px 0px 12px 0px;
+}
+
+.main-footer p {
+  color: var(--p-text);
+}
+.footer-section1 h1 {
+  color: var(--btn-color);
+  padding: 6px 2px 8px 0px;
+  font-size: 40px;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.tow-footer-section {
+  display: flex;
+  width: 40%;
+  gap: 70px;
+  justify-content: flex-end;
+}
+.tow-footer-section .footer-section2 p,
+.footer-section3 p {
+  font-size: 15px;
+  padding: 5px 0px;
+}
+
+.footer-section1 {
+  width: 50%;
+}
+.footer-section1 p {
+  padding: 2px 0px 20px 0px;
+  font-size: 14px;
+}
+footer small {
+  color: var(--p-text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+}
+/* training section */
+.training-dex {
+  padding: 40px 30px 10px 0px;
+  width: 92%;
+  margin: 20px auto;
+}
+.training-dex h1 {
+  color: var(--heding-color);
+  font-size: 43px;
+  font-weight: 800;
+  padding: 9px 0px;
+}
+.training-dex p {
+  color: var(--p-text);
+  font-size: 15px;
+  line-height: 17px;
+}
+/* training img section */
+.training-img-section {
+  width: 92%;
+  margin: 40px auto;
+  color: white;
+}
+.fast-3div {
+  display: grid;
+  grid-template-columns: 0.7fr 1.4fr 0.9fr;
+}
+.fast-3div div {
+  height: 240px;
+}
+.training-img-1 {
+  background-image: linear-gradient(
+      rgba(90, 214, 245, 0.397),
+      rgba(14, 112, 107, 0.438)
+    ),
+    url(./images/exercise1.jpg);
+  display: flex;
+  align-items: end;
+  padding: 20px 10px;
+}
+
+.training-img-2 {
+  background-image: linear-gradient(
+      rgba(247, 97, 97, 0.514),
+      rgba(247, 97, 97, 0.411)
+    ),
+    url(./images/exercise2.png);
+  padding: 20px;
+}
+.training-img-3 {
+  background-image: linear-gradient(
+      rgba(43, 40, 40, 0.473),
+      rgba(54, 52, 52, 0.473)
+    ),
+    url(./images/exercise3.png);
+  display: flex;
+  align-items: end;
+  padding: 20px;
+}
+.training-img-4 {
+  background-image: linear-gradient(
+      rgba(26, 25, 25, 0.425),
+      rgba(0, 0, 0, 0.37)
+    ),
+    url(./images/exercise4.png);
+  display: flex;
+  justify-content: end;
+  padding: 20px;
+}
+.training-img-5 {
+  background-image: linear-gradient(
+      rgba(30, 185, 30, 0.308),
+      rgba(33, 189, 33, 0.363)
+    ),
+    url(./images/exercise5.jpg);
+  display: flex;
+  align-items: end;
+  padding: 20px;
+}
+.training-img-6 {
+  background-image: linear-gradient(
+      rgba(135, 171, 247, 0.205),
+      rgba(92, 187, 241, 0.377)
+    ),
+    url(./images/exercise6.jpg);
+  display: flex;
+  align-items: end;
+  padding: 20px;
+}
+.sec-3div {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr 1fr;
+}
+.sec-3div div {
+  height: 240px;
+}
+/* bmi text scection */
+.bmi-text {
+  width: 60%;
+  margin: 25px auto;
+}
+.bmi-text h1 {
+  color: var(--heding-color);
+  padding: 6px;
+  font-weight: 800;
+  font-size: 30px;
+}
+.bmi-text p {
+  color: var(--p-text);
+  padding: 6px 10px 4px 6px;
+  font-size: 14px;
+  line-height: 19px;
+}
+/* bmi-calculetion scetion */
+.bmi-calculetion {
+  border: 2px solid green;
+  width: 100%;
+  /* height: 400px; */
+  background: rgba(56, 41, 41, 0.5);
+}
+.bmi-box {
+  color: white;
+  display: flex;
+  gap: 50px;
+  width: 92%;
+  margin: 0 auto;
+  border: 2px solid green;
+  height: 100%;
+  padding: 20px 0px;
+}
+.bmi-tebil {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.bmi-tebil table {
+  border-collapse: collapse;
+}
+.bmi-tebil h1 {
+  font-weight: 800;
+}
+.bmi-tebil tr,
+th,
+td {
+  border: 1px solid rgba(102, 95, 95, 0.747);
+  text-align: left;
+  padding: 10px;
+  font-size: 16px;
+  color: var(--p-text);
+}
+.bmi-tebil th,
+h1 {
+  color: var(--heding-color);
+}
+.bmi-tebil h1 {
+  padding-bottom: 40px;
+}
+.bmicalculetor {
+  border: 2px solid red;
+  height: 100%;
+  width: 60%;
+  padding: 0px 10px;
+}
+.bmicalculetor h1 {
+  color: var(--heding-color);
+  font-weight: 800;
+}
+.bmicalculetor p {
+  color: var(--p-text);
+  font-size: 15px;
+}
+.bmicalculetor {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.bmicalculetor form {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.inp-fast {
+  max-width: 100%;
+  display: flex;
+  gap: 7px;
+  border: 2px solid gold;
+}
+.inp-fast input {
+  width: 50%;
+}
+
+.inp-sec {
+  max-width: 100%;
+  display: flex;
+
+  border: 2px solid gold;
+  gap: 7px;
+}
+.inp-sec input,
+select {
+  width: 50%;
+}
+
+form {
+  padding: 20px 0px;
+  width: 100%;
+}
+form .full-width{
+  width: 100%;
+}
+form input,
+select {
+  padding: 12px 9px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  background-color: rgba(128, 128, 128, 0.301);
+}
+
+select,
+input::placeholder {
+  color: white;
+}
+.bmicalculetor button {
+  width: 120px;
+  padding: 8px;
+  background-color: var(--btn-color);
+  border: none;
+  border-radius: 14px;
+  color: white;
+  font-weight: 700;
+}
+
 /* small divai phone */
 @media screen and (max-width: 576px) {
   .icon {
@@ -299,7 +604,7 @@ main {
   }
   .blur-box1 {
     font-size: 10px;
-    right: -0px;
+    right: -10px;
     top: 70px;
   }
   .blur-box2 {
@@ -327,5 +632,35 @@ main {
   }
   .run-img {
     width: 90%;
+  }
+  /* footer */
+  .main-footer,
+  .tow-footer-section {
+    flex-direction: column;
+  }
+  .footer-section1,
+  .footer-section2,
+  .footer-section3 {
+    width: 100%;
+  }
+  .training-img-3,
+  .training-img-6 {
+    display: none;
+  }
+  .fast-3div {
+    grid-template-columns: 1fr 1fr;
+  }
+  .sec-3div {
+    grid-template-columns: 0.9fr 1.1fr;
+  }
+  .bmi-box {
+    flex-direction: column;
+  }
+  .bmi-tebil,
+  .bmicalculetor {
+    width: 100%;
+  }
+  .inp-fast {
+    width: 100%;
   }
 }
