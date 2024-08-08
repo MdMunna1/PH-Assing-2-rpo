@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+@import url("https://fonts.cdnfonts.com/css/miama?styles=170364,627");
 
 * {
   margin: 0px;
@@ -81,7 +81,7 @@ nav ul li a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 60px;
+  gap: 70px;
 }
 .bennar-1 {
   width: 55%;
@@ -96,7 +96,8 @@ nav ul li a {
   line-height: 64px;
 }
 .bennar-1 h1 span {
-  font-family: "Dancing Script", cursive;
+  font-family: "Miama", sans-serif;
+  font-size: 100px;
 }
 .bennar-1 p {
   color: var(--p-text);
@@ -181,7 +182,6 @@ nav ul li a {
 }
 /* main section */
 main {
-  border: 1px solid red;
   width: 100%;
 }
 .habbyt {
@@ -190,7 +190,7 @@ main {
 }
 .habbyt-heding {
   width: 80%;
-  margin: 5px auto;
+  margin: 25px auto;
   text-align: center;
 }
 .habbyt-heding h1 {
@@ -239,7 +239,7 @@ main {
 /* runs section */
 .run-section {
   width: 92%;
-  margin: 10px auto;
+  margin: 50px auto 5px;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -534,7 +534,6 @@ h1 {
 }
 .inp-fast input {
   width: 50%;
-  
 }
 
 .inp-sec {
@@ -562,6 +561,12 @@ select {
   color: rgba(255, 255, 255, 0.6);
   background-color: rgba(128, 128, 128, 0.301);
 }
+/* vaiya ai css gula kaj kore na keno */
+
+/* .bmicalculetor form select option{
+  color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(128, 128, 128, 0.301);
+} */
 .bmicalculetor button {
   width: 130px;
   padding: 9px;
@@ -571,6 +576,77 @@ select {
   color: white;
   font-weight: 700;
   margin-bottom: 50px;
+}
+
+/* Meet Our Team */
+.meet-ourteam {
+  width: 92%;
+  margin: 40px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.meet-text {
+  width: 73%;
+  text-align: center;
+  height: auto;
+}
+.meet-text h1 {
+  color: var(--heding-color);
+  font-size: 35px;
+  font-weight: 800;
+  margin: 10px;
+}
+.meet-text p {
+  color: var(--p-text);
+  font-size: 15px;
+  padding: 5px;
+  line-height: 22px;
+}
+.meet-img {
+  /* height: 200px; */
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 9px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.trainar {
+  height: 230px;
+  border-radius: 10px;
+}
+.t-1 {
+  background-image: url(./images/trainer1.png);
+}
+.t-2 {
+  background-image: url(./images/trainer2.png);
+}
+.t-3 {
+  background-image: url(./images/trainer3.png);
+}
+.t-4 {
+  background-image: url(./images/trainer4.png);
+}
+.t-5 {
+  background-image: url(./images/trainer5.png);
+}
+.t-6 {
+  background-image: url(./images/trainer6.png);
+}
+.meet-img .trainar {
+  display: flex;
+  align-items: flex-end;
+  padding: 10px;
+}
+.meet-img .trainar h3 {
+  color: var(--heding-color);
+  font-weight: 800;
+}
+.meet-img .trainar p {
+  color: var(--p-text);
 }
 
 /* small divai phone */
@@ -658,5 +734,14 @@ select {
   }
   .inp-fast {
     width: 100%;
+  }
+  .meet-text {
+    width: 95%;
+  }
+  .meet-img{
+    grid-template-columns: 1fr;
+  }
+  .meet-img .t-1, .meet-img .t-4{
+    display: none;
   }
 }
