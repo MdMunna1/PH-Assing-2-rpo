@@ -12,7 +12,6 @@ body {
   background: rgb(0, 0, 0);
   font-family: "Inter", sans-serif;
 }
-/* shearing css  */
 header {
   background: linear-gradient(
     180deg,
@@ -461,8 +460,7 @@ footer small {
 /* bmi-calculetion scetion */
 .bmi-calculetion {
   width: 100%;
-  /* height: 400px; */
-  background: rgba(56, 41, 41, 0.5);
+  background: rgb(34, 34, 34);
 }
 .bmi-box {
   color: white;
@@ -738,10 +736,11 @@ select {
   .meet-text {
     width: 95%;
   }
-  .meet-img{
+  .meet-img {
     grid-template-columns: 1fr;
   }
-  .meet-img .t-1, .meet-img .t-4{
+  .meet-img .t-1,
+  .meet-img .t-4 {
     display: none;
   }
 }
