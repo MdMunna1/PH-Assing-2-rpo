@@ -514,63 +514,40 @@ h1 {
   color: var(--p-text);
   font-size: 15px;
 }
+/* bmi calculetor section */
 .bmicalculetor {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
 }
 .bmicalculetor form {
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9px;
+  padding: 10px 0px;
+}
+.bmicalculetor form input::placeholder,
+.bmicalculetor form select {
   color: rgba(255, 255, 255, 0.6);
 }
-.inp-fast {
-  max-width: 100%;
-  display: flex;
-  gap: 7px;
-}
-.inp-fast input {
-  width: 50%;
-}
-
-.inp-sec {
-  max-width: 100%;
-  display: flex;
-  gap: 7px;
-}
-.inp-sec input,
-select {
-  width: 50%;
-}
-
-form {
-  padding: 20px 0px;
-  width: 100%;
-}
-form .full-width {
-  width: 100%;
-}
-form input,
-select {
-  padding: 12px 9px;
+.bmicalculetor form input,
+.bmicalculetor form select {
+  padding: 10px 12px;
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.1);
   border: none;
-  border-radius: 6px;
-  color: rgba(255, 255, 255, 0.6);
-  background-color: rgba(128, 128, 128, 0.301);
 }
-/* vaiya ai css gula kaj kore na keno */
+.bmicalculetor .full-width {
+  grid-column: span 2;
+}
 
-/* .bmicalculetor form select option{
-  color: rgba(255, 255, 255, 0.6);
-  background-color: rgba(128, 128, 128, 0.301);
-} */
 .bmicalculetor button {
-  width: 130px;
-  padding: 9px;
+  width: 140px;
+  padding: 10px;
   background-color: var(--btn-color);
   border: none;
-  border-radius: 14px;
+  font-size: 17px;
+  border-radius: 18px;
   color: white;
   font-weight: 700;
   margin-bottom: 50px;
